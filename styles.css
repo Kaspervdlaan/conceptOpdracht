@@ -12,8 +12,12 @@
     5. Media Queries
 ////////////////////////*/
 
+/*background: rgb(72,69,228);*/
+/*background: linear-gradient(128deg, rgba(72,69,228,1) 10%, rgba(87,34,205,1) 76%);*/
+
 /* ------------------------------- 1. Global Styles -------------------------------- */
 :root {
+    --background: linear-gradient(128deg, rgba(72,69,228,1) 10%, rgba(87,34,205,1) 76%);
     --white: #FFF;
     --purple: #5722CD;
     --blue: #4845E4;
@@ -95,7 +99,7 @@ a, li {
 /* --------------- 4.0 Nav ------------------------- */
 nav {
     display: flex;
-    background-color: var(--purple);
+    background: var(--background);
     justify-content: center;
     padding: 30px;
 }
@@ -113,7 +117,7 @@ ul {
 }
 /* --------------- 4.1 Header ------------------------- */
 header{
-    background-color: var(--purple);
+    background: var(--background);
     color: var(--white);
     position: relative;
 }
@@ -228,7 +232,7 @@ header h4 {
 }
 /* --------------- 4.3 Contact Form ------------------- */
 .form-outer-container {
-    background-color: var(--purple);
+    background: var(--background);
     color: var(--white);
 }
 
@@ -243,7 +247,6 @@ header h4 {
     display: flex;
     flex-direction: column;
     text-align: left;
-    align-items: center;
 }
 
 .form-container h4 {
@@ -267,6 +270,7 @@ label {
     width: fit-content;
     padding: 20px 80px 20px 80px;
     margin-bottom: 60px;
+    align-self: center;
  }
 /* --------------- 4.4 Footer ------------------- */
 .footer-outer-container {
