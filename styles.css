@@ -93,6 +93,12 @@ a, li {
     color: white;
     font-family: 'Roboto', sans-serif;
     filter: drop-shadow(6px 5px 5px black);
+    transition: 0.05s;
+}
+
+.button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
 }
 /* ------------------------------- 4. Areas ---------------------------------------- */
 
@@ -193,10 +199,27 @@ header h4 {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 12px;
+    color: var(--blue);
 }
 
 .text-container h3 {
     font-size: 26px;
+}
+/* --------------- 4.3.1 Line animation ------------------- */
+.text-container a::after {
+    display: inline-block;
+    content: "";
+    width: 5%;
+    height: 2px;
+    margin-left: 10px;
+    margin-bottom:3px;
+    background-color: var(--blue);
+    transition: width 0.35s;
+    transition-timing-function: ease;
+}
+
+.text-container a:hover::after {
+    width: 30%;
 }
 /* --------------- 4.3 Services ------------------- */
 .services-inner-container {
@@ -216,6 +239,11 @@ header h4 {
     padding: 40px;
     border: 1px solid #5722CD;
     box-shadow: 2px 2px 10px #a6a5a5;
+    transition: 0.1s;
+}
+
+.services:hover {
+    transform: scale(1.02);
 }
 
 .icon-image {
