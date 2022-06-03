@@ -100,12 +100,16 @@ a, li {
     transform: scale(1.05);
     cursor: pointer;
 }
+
+.gradient {
+    background: var(--background);
+}
 /* ------------------------------- 4. Areas ---------------------------------------- */
 
 /* --------------- 4.0 Nav ------------------------- */
 nav {
     display: flex;
-    background: var(--background);
+    background: none;
     justify-content: center;
     padding: 30px;
 }
@@ -123,7 +127,7 @@ ul {
 }
 /* --------------- 4.1 Header ------------------------- */
 header{
-    background: var(--background);
+    background: none;
     color: var(--white);
     position: relative;
 }
@@ -210,7 +214,7 @@ header h4 {
     display: inline-block;
     content: "";
     width: 5%;
-    height: 2px;
+    height: 1px;
     margin-left: 10px;
     margin-bottom:3px;
     background-color: var(--blue);
